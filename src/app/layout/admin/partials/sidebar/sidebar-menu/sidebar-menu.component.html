@@ -1,0 +1,8 @@
+<div [class]="{'sidebar-expanded':!isCollapsed, 'sidebar-collapsed':isCollapsed}" >
+  <div class="list-group">
+    <div class="text-muted d-flex align-items-center menu-collapsed p-2">
+      <small>ENTITIES</small>
+    </div>
+    <app-sidebar-menu-item  *ngFor="let itemMenu of menu" [menuItem]="itemMenu"></app-sidebar-menu-item>
+  </div><!-- List Group END-->
+</div><!-- sidebar-container END -->

@@ -1,0 +1,7 @@
+<!-- Sidebar -->
+<div class="sidebar-container  d-md-block" [ngClass]="{'sidebar-expanded': !isCollapsed, 'sidebar-collapsed': isCollapsed}" >
+  <app-sidebar-brand-logo (onCollapsed)="collapsed()" ></app-sidebar-brand-logo>
+  <div class="sidebar-separator-title menu-collapsed"></div>
+  <app-sidebar-menu [isCollapsed]="isCollapsed" ></app-sidebar-menu>
+</div><!-- sidebar-container END -->
+

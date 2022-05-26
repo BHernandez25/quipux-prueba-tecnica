@@ -1,0 +1,94 @@
+// Global component styles
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+a {
+  &:focus {
+    outline: none;
+  }
+}
+h1, h2 {
+  color: #44bbff;
+  font-size: 3.5rem;
+}
+
+.btn {
+  border-radius: 0;
+  &.btn-r{
+    border-radius: .25rem;
+  }
+}
+
+.form-control {
+  border-color: $primary;
+}
+
+// Main page wrapper
+#wrapper {
+  display: flex;
+
+  #content-wrapper {
+    background-color: $gray-200;
+    width: 100%;
+    overflow-x: hidden;
+
+    #content {
+      background-color: white;
+      flex: 1 0 auto;
+      margin: 10px;
+    }
+  }
+}
+
+// Set container padding to match gutter width instead of default 15px
+.container,
+.container-fluid {
+  padding-left: 4.5rem;
+  padding-right: $grid-gutter-width;
+}
+
+.sidebar-container {
+  background-color: $gray-500;
+  height: 100vh;
+}
+
+
+// Scroll to top button
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-align: center;
+  color: $white;
+  background: fade-out($gray-800, .5);
+  line-height: 46px;
+
+  &:focus,
+  &:hover {
+    color: white;
+  }
+
+  &:hover {
+    background: $gray-800;
+  }
+
+  i {
+    font-weight: 800;
+  }
+}
+
+
+#body-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+

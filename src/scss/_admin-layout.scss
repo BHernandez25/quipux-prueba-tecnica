@@ -1,0 +1,155 @@
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+  width: 230px;
+
+  .menu-collapsed {
+    display: block;
+  }
+
+  .sidebar-submenu {
+    .menu-collapsed {
+      display: inline-block;
+    }
+  }
+}
+
+.sidebar-collapsed {
+  width: 60px;
+
+  .menu-collapsed {
+    display: none !important;
+  }
+}
+
+/* Sidebar */
+.sidebar-container {
+  position: fixed;
+  z-index: 100;
+
+  .logo {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 30px;
+    position: absolute;
+  }
+
+  .btn-burger {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    color: white;
+    width: 60px;
+    cursor: pointer;
+
+    &:hover {
+      color: $gray-200;
+    }
+
+  }
+
+  .list-group {
+    a {
+      height: 50px;
+      color: white;
+    }
+
+    .list-group-item {
+      color: white;
+      background-color: $gray-500;
+
+      &:hover {
+        background-color: $gray-200;
+      }
+
+    }
+
+    .sidebar-submenu {
+      font-size: 0.9rem;
+    }
+
+    .sidebar-submenu a {
+      height: 45px;
+      padding-left: 30px;
+    }
+  }
+
+  .text-muted {
+    color: $gray-200 !important;
+  }
+
+
+  /* Separators */
+  .sidebar-separator-title {
+    background-color: color("bg-sidebar");
+    height: 35px;
+  }
+
+  .sidebar-separator {
+    background-color: color("bg-sidebar");
+    height: 25px;
+  }
+
+}
+
+
+/* Footer */
+.footer {
+  .footer-logo {
+    .img-footer {
+      max-height: 32px;
+      width: auto;
+      padding: 5px;
+    }
+  }
+}
+
+
+/* Navbar */
+.user-icon {
+  background-color: $gray-400;
+  color: white;
+  padding: 10px 14px 10px 14px;
+  margin-right: 5px;
+}
+.navbar-custom{
+  border: 1px solid $gray-200;
+  height: 64px;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "";
+}
+.breadcrumb{
+  height: 63px;
+  color: $gray-200;
+  padding: 15px;
+  text-align: center;
+  margin: 0px;
+  background-color: transparent !important;
+
+  .breadcrumb-separator{
+    font-size: 1.3em;
+    margin-top: -3px;
+  }
+
+  .breadcrumb-item {
+     font-size: 1.2em;
+     text-align: center;
+     padding-left: 10px;
+     padding-right: 10px;
+     cursor: pointer;
+
+    a{
+      color: $gray-200 !important;
+      text-decoration: none;
+    }
+
+    &.active{
+       height: 50px;
+       border-bottom: 4px solid $primary;
+       color: $primary;
+    }
+
+  }
+
+}
+

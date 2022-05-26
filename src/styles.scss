@@ -1,0 +1,15 @@
+// Import Custom Variables
+@import "scss/variables";
+
+// Import Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Import Custom SCSS
+@import "scss/global";
+
+@import "scss/admin-layout";
+@import "scss/company";
+@import "scss/dashboard";
+
+
+

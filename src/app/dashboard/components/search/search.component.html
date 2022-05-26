@@ -1,0 +1,21 @@
+<div class="search mt-5 py-5">
+  <h1>Que quieres Buscar?</h1>
+  <p>Encuentra La Información que desees consultar...</p>
+  <div class="input-group">
+    <div class="input-group-btn search-panel ">
+      <button type="button" class="btn btn-primary dropdown-toggle rounded-left" data-toggle="dropdown">
+        <span id="search_concept">Todos los servicios</span> <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#example">example</a></li>
+      </ul>
+    </div>
+    <input type="hidden" name="search_param" value="all" id="search_param">
+    <input type="text" class="form-control " name="x" placeholder="Que servicio quieres consultar...">
+    <span class="input-group-btn">
+    <button class="btn btn-primary rounded-right" type="button">
+       <fa-icon [icon]="['fas', 'magnifying-glass']"></fa-icon>
+    </button>
+  </span>
+  </div>
+</div>
